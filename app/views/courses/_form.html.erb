@@ -1,6 +1,6 @@
-<%= simple_form_for @student do |f| %>
+<%= simple_form_for @course do |f| %>
 	<%= f.input :name, label: "Nome: " %>
-	<%= f.input :register_number, label: "Número de Registro: " %>
+	<%= f.input :description, label: "Descrição: " %>
 	<%= f.input :status, label: "Status: " %>
 	<%= f.submit "Salvar" %>
 <% end %>
