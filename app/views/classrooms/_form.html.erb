@@ -1,5 +1,11 @@
 <%= simple_form_for @classroom do |f| %>
-	<%= f.input :student_id, label: "Nome: ", :collection => Student.order(:name) %>
-	<%= f.input :course_id, label: "Descrição: ", :collection => Course.order(:name) %>
-	<%= f.submit "Salvar" %>
+  <div class="form-group">
+    <label>Estudante</label>
+    <%= f.input :student_id,:collection => Student.order(:name), label: false, input_html: {class: "form-control"} %>
+  </div>
+  <div class="form-group">
+    <label>Curso</label>
+    <%= f.input :course_id,:collection => Course.order(:name), label: false, input_html: {class: "form-control"} %>
+  </div>
+	<%= f.submit "Salvar", class: "btn btn-primary btn-block" %>
 <% end %>
