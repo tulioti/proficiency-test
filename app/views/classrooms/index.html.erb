@@ -1,0 +1,8 @@
+<h1>Lista de Matrículas</h1>
+<% if (@students_count > 0 && @courses_count > 0)%>
+	<%= link_to "Nova Matrícula", new_classroom_path %>
+	<%= render 'list_enrolment' %>
+<% else %>
+	<h2>Você não precisa cadastrar pelo menos um estudante e um curso!</h2>
+	<p></p>
+<% end %>

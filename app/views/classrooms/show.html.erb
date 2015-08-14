@@ -1,0 +1,4 @@
+<h1>Detalhes</h1>
+<p><b>Aluno: </b><%= @classroom.student.register_number %> - <%= @classroom.student.name %></p>
+<p><b>Turma: </b><%= @classroom.course.name %></p>
+<p><b>Data e Hora da matrícula: </b><%= @classroom.entry_at.strftime("%d-%m-%Y %H:%M") %></p>
