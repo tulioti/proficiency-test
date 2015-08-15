@@ -1,5 +1,5 @@
 Rails.application.routes.draw do
-  root 'classroms#index'
+  root 'classrooms#index'
   resources :students, :path => 'estudantes'
   resources :courses, :path => 'cursos'
   resources :classrooms, :path => 'matricula'

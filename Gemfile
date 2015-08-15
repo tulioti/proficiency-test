@@ -70,3 +70,4 @@ group :production do
 end
 
 gem "twitter-bootstrap-rails"
+gem 'puma'
